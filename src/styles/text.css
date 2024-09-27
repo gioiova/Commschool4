@@ -5,11 +5,15 @@
   font-weight: 500;
   line-height: normal;
 }
+
 .hL {
   font-size: 40px;
 }
 .hM {
   font-size: 30px;
+}
+.hS {
+  font-size:20px;
 }
 .pXL {
   font-size: 20px;
@@ -31,10 +35,35 @@
   border-radius: 8px;
   width: fit-content;
 }
+
 .text-white {
   color: white;
 }
 
 .text-green {
-  color:#b9ff66;
+  color: #b9ff66;
+}
+
+.custom-hr {
+  border: 0;
+  border-top: 2px solid black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+
+}
+
+.ml-30{
+  margin-left: 30px;
+}
+.m-0-auto{
+  margin: 0 auto;
+}
+
+.underline{
+  text-decoration: underline rgba(255, 255, 255, 0.362);
+
 }
