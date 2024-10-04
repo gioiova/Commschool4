@@ -87,7 +87,7 @@
           alt="feature1"
         />
         <img
-          class="w-10 sm-w-30 filtered"
+          class="w-10 sm-w-30 filtered "
           src="./src/img/netflix.svg"
           alt="feature1"
         />
@@ -116,15 +116,16 @@
       </div>
       <div class="flex justify-between mobile_version_2 only_mobile">
         <img
+        class="w-10 sm-w-30 filtered"
+        src="./src/img/netflix.svg"
+        alt="feature1"
+      />
+        <img
           class="w-10 sm-w-30 filtered"
           src="./src/img/notion.svg"
           alt="feature1"
         />
-        <img
-          class="w-10 sm-w-30 filtered"
-          src="./src/img/netflix.svg"
-          alt="feature1"
-        />
+       
         <img
           class="w-10 sm-w-30 filtered"
           src="./src/img/zoom.svg"
@@ -372,22 +373,7 @@
         </p>
       </div>
 
-      <div class="bg-black border-rounded p-50 mt-60">
-        <div class="flex justify-center">
-          <div class="sm-w-100 bg-black text-white">
-            <div class="vertical-line"></div>
-            <p class="text_box pXL">
-              For a local restaurant, we implemented a targeted PPC campaign
-              that resulted in a 50% increase in website traffic and a <br />
-              25% increase in sales.
-            </p>
-            <a href="#" class="flex align-center mt-20 text-green">
-              <span class="text_box pM">Learn more</span>
-              <img src="./src/img/learnMore.svg" alt="Arrow" class="icon" />
-            </a>
-          </div>
-        </div>
-      </div>
+      
 
       <!-- Case Study Details-->
       <div class="bg-black border-rounded p-50 mt-60 only_desktop">
@@ -606,15 +592,15 @@
         <div
           class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100"
         >
-          <div class="flex justify-between align-start">
-            <div class="flex align-end gap-15">
+          <div class="flex justify-between align-start no-flex-wrap" >
+            <div class="flex align-end gap-15 no-flex-wrap">
               <img src="./src/img/janeDoe.svg" class="w-40" alt="" />
-              <div class="flex flex-col">
+              <div class="flex flex-col ">
                 <h4>Jane Doe</h4>
-                <p>Director</p>
+                <p>Director of operations</p>
               </div>
             </div>
-            <div>
+            <div class="flex no-flex-wrap">
               <img src="./src/img/linkedin.svg" alt="" />
             </div>
           </div>
@@ -628,12 +614,12 @@
         <div
           class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100"
         >
-          <div class="flex justify-between align-start">
-            <div class="flex align-end gap-15">
+          <div class="flex justify-between align-start no-flex-wrap">
+            <div class="flex align-end gap-15 no-flex-wrap">
               <img src="./src/img/michael.svg" class="w-40" alt="" />
               <div class="flex flex-col">
                 <h4 class="no-wrap">Michael Brown</h4>
-                <p class="no-wrap">CEO Specialist</p>
+                <p class="no-wrap">Senior CEO Specialist</p>
               </div>
             </div>
             <div>
@@ -650,7 +636,7 @@
 
       <div class="flex gap-40 mt-20">
         <div
-          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100 only_desktop"
+          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100 "
         >
           <div class="flex justify-between align-start">
             <div class="flex align-end gap-15">
@@ -672,10 +658,10 @@
         </div>
 
         <div
-          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100 only_desktop"
+          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100 only_desktop "
         >
-          <div class="flex justify-between align-start">
-            <div class="flex align-end gap-15">
+          <div class="flex justify-between align-start no-flex-wrap">
+            <div class="flex align-end gap-15 no-flex-wrap">
               <img src="./src/img/brian.svg" class="w-40" alt="" />
               <div class="flex flex-col">
                 <h4 class="no-wrap">Brian Williams</h4>
@@ -695,7 +681,7 @@
         </div>
 
         <div
-          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100"
+          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100 only_desktop"
         >
           <div class="flex justify-between align-start">
             <div class="flex align-end gap-15">
@@ -818,12 +804,15 @@
         <div class="bg-gray border-rounded p-35 w-100 sm-w-100 sm-p-40">
           <div class="flex justfy-between gap-80 sm-gap-30">
             <div class="flex justify-between flex-col gap-40">
-              <div class="flex sm-justify-evenly">
+              <div class="flex gap-30 sm-justify-evenly">
+                <div>
                 <input type="radio" />
                 <label for="text">Say Hi</label>
-
+              </div>
+              <div>
                 <input type="radio" />
                 <label for="text">Get a quote</label>
+              </div>
               </div>
 
               <div class="flex flex-col gap-10">
@@ -958,7 +947,7 @@
                 </div>
               </div>
 
-              <div class="flex only_mobile_flex">
+              <div class="flex only_mobile">
                 <img src="/src/img/Social icons.svg" alt="" />
               </div>
             </div>
