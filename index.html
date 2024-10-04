@@ -12,13 +12,13 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="container  fixed-header">
+    <header class="container fixed-header">
       <nav>
         <div class="flex justify-between align-center">
           <div>
             <img src="./src/img/logo.svg" alt="logo" />
           </div>
-          <div class="flex align-center gap-40">
+          <div class="flex align-center gap-40 only_desktop_flex">
             <ul class="flex gap-40">
               <li><a class="pXL" href="#">About us</a></li>
               <li><a class="pXL" href="#">Services</a></li>
@@ -28,48 +28,116 @@
             </ul>
             <button class="btn_secondary">Request a quote</button>
           </div>
+          <div class="only_mobile">
+            <div class="flex flex-col gap-4">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
 
     <!-- Main Banner Section (Section 1) -->
-    <section class="mt-140 container">
+    <section class="mt-140 container sm-mt-60">
       <div class="flex justify-between align-center">
-        <div class="flex flex-col gap-40 w-50">
+        <div class="flex flex-col gap-40 w-50 sm-w-100">
           <h1 class="hXL font-semibold">
             Navigating the digital landscape <br />
             for success
           </h1>
+          <div class="w-40 sm-w-100 only_mobile">
+            <img src="./src/img/banner.svg" alt="banner image" />
+          </div>
           <p class="pXL font-light">
             Our digital marketing agency helps businesses grow and succeed
             online through a range of services including SEO, PPC, social media
             marketing, and content creation.
           </p>
-          <button class="btn_primary w-50">Book a consultation</button>
+          <button class="btn_primary w-50 sm-w-100">Book a consultation</button>
         </div>
-        <div class="w-40">
+        <div class="w-40 sm-w-100 only_desktop">
           <img src="./src/img/banner.svg" alt="banner image" />
         </div>
       </div>
     </section>
 
     <!-- Logos Section (Section 2) -->
-    <section class="mt-70 container">
-      <div class="flex justify-between">
-        <img class="w-10 filtered" src="./src/img/amazon.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/driblle.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/hubspot.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/notion.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/netflix.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/zoom.svg" alt="feature1" />
+    <section class="mt-70 container sm_no_container">
+      <div class="flex justify-between only_desktop_flex">
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/amazon.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/driblle.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/hubspot.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/notion.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/netflix.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/zoom.svg"
+          alt="feature1"
+        />
+      </div>
+      <div class="flex justify-between mobile_version_1 only_mobile">
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/amazon.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/driblle.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/hubspot.svg"
+          alt="feature1"
+        />
+      </div>
+      <div class="flex justify-between mobile_version_2 only_mobile">
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/notion.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/netflix.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/zoom.svg"
+          alt="feature1"
+        />
       </div>
     </section>
 
     <!-- Services Overview Section (Section 3) -->
     <section class="mt-140 container">
-      <div class="flex gap-40 align-center">
-        <h2 class="hL text_box font-semibold green">Services</h2>
-        <p class="pL font-light">
+      <div class="flex gap-40 align-center sm_justify_center">
+        <h2 class="hL text_box font-semibold green sm_text_center">Services</h2>
+        <p class="pL font-light sm_text_center">
           At our digital marketing agency, we offer a range of services to
           <br />
           help businesses grow and succeed online. These services include:
@@ -78,7 +146,9 @@
 
       <!-- Service cards -->
       <div class="flex gap-40 align-center mt-60 flex-wrap">
-        <div class="bg-gray p-50 border border-rounded box-shadow w-500">
+        <div
+          class="bg-gray p-50 border border-rounded box-shadow w-500 only_desktop"
+        >
           <div class="flex justify-between align-center gap-40">
             <div class="flex flex-col gap-40">
               <div>
@@ -90,13 +160,34 @@
                 <p class="pXL">learn more</p>
               </div>
             </div>
-
             <div>
               <img src="./src/img/serivces2.svg" class="w-212" alt="seo" />
             </div>
           </div>
         </div>
-        <div class="bg-green p-50 border border-rounded box-shadow w-500">
+
+        <!-- mobile version -->
+        <div
+          class="bg-gray p-50 border border-rounded box-shadow w-500 only_mobile"
+        >
+          <div class="flex justify-between align-center sm-w-100">
+            <div class="flex flex-col">
+              <div>
+                <h3 class="text_box green">Search engine</h3>
+                <h3 class="text_box green">optimization</h3>
+              </div>
+            </div>
+            <div class="flex justify-between align-end sm-w-100">
+              <img src="./src/img/learnMore.svg" class="icon" alt="seo" />
+
+              <img src="./src/img/serivces2.svg" class="w-165" alt="seo" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-green p-50 border border-rounded box-shadow w-500 only_desktop"
+        >
           <div class="flex justify-between align-center gap-40">
             <div class="flex flex-col gap-40">
               <div>
@@ -114,7 +205,31 @@
             </div>
           </div>
         </div>
-        <div class="bg-black p-50 border border-rounded box-shadow w-500">
+
+        <!-- mobile version -->
+
+        <div
+          class="bg-green p-50 border border-rounded box-shadow w-500 only_mobile"
+        >
+          <div class="flex justify-between align-center sm-w-100">
+            <div class="flex flex-col">
+              <div>
+                <h3 class="text_box white">Pay-per-click</h3>
+                <h3 class="text_box white">advertising</h3>
+              </div>
+            </div>
+
+            <div class="flex justify-between align-end sm-w-100">
+              <img src="./src/img/learnMore.svg" class="icon" alt="seo" />
+
+              <img src="./src/img/services3.svg" class="w-165" alt="seo" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-black p-50 border border-rounded box-shadow w-500 only_desktop"
+        >
           <div class="flex justify-between align-center gap-40">
             <div class="flex flex-col gap-40">
               <div>
@@ -136,7 +251,29 @@
             </div>
           </div>
         </div>
-        <div class="bg-gray p-50 border border-rounded box-shadow w-500">
+
+        <!-- mobile version -->
+        <div
+          class="bg-black p-50 border border-rounded box-shadow w-500 only_mobile"
+        >
+          <div class="flex justify-between align-center sm-w-100">
+            <div class="flex flex-col">
+              <div>
+                <h3 class="text_box white">Social Media</h3>
+                <h3 class="text_box white">Marketing</h3>
+              </div>
+            </div>
+
+            <div class="flex justify-between align-end sm-w-100">
+              <img src="./src/img/learnMorewhite.svg" class="icon" alt="seo" />
+              <img src="./src/img/services4.svg" class="w-165" alt="seo" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-gray p-50 border border-rounded box-shadow w-500 only_desktop"
+        >
           <div class="flex justify-between align-center gap-40">
             <div class="flex flex-col gap-40">
               <div>
@@ -154,6 +291,25 @@
             </div>
           </div>
         </div>
+
+        <!-- mobile version -->
+        <div
+          class="bg-gray p-50 border border-rounded box-shadow w-500 only_mobile"
+        >
+          <div class="flex justify-between align-center sm-w-100">
+            <div class="flex flex-col">
+              <div>
+                <h3 class="text_box green">Email</h3>
+                <h3 class="text_box green">Marketing</h3>
+              </div>
+            </div>
+
+            <div class="flex justify-between align-end sm-w-100">
+              <img src="./src/img/learnMore.svg" class="icon" alt="seo" />
+              <img src="./src/img/Services5.svg" class="w-165" alt="seo" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -161,7 +317,7 @@
 
     <section class="mt-140 container">
       <div class="flex gap-40 align-center flex-wrap">
-        <div class="bg-gray p-100 border-rounded w-100 h-280">
+        <div class="bg-gray p-100 border-rounded w-100 h-280 only_desktop">
           <div class="flex justify-between align-center gap-40">
             <div class="w-50 flex flex-col gap-40">
               <div>
@@ -185,21 +341,56 @@
             </div>
           </div>
         </div>
+
+        <!-- mobile version -->
+        <div class="bg-gray p-50 border-rounded only_mobile">
+          <div class="flex align-center sm-w-100">
+            <div class="flex justify-between gap-40 flex-col">
+              <h3>Let's make things happen</h3>
+              <p>
+                Contact us today to learn more about how our digital marketing
+                services can help your business grow and succeed online.
+              </p>
+              <button class="btn_primary no-wrap sm-w-100">
+                Get your free proposal
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Case Studies Section (Section 5) -->
     <section class="mt-140 container">
-      <div class="flex gap-40 align-center">
-        <h2 class="hL text_box font-semibold green">Case Studies</h2>
-        <p class="pL font-light">
+      <div class="flex gap-40 align-center sm_justify_center">
+        <h2 class="hL text_box font-semibold green sm_text_center">
+          Case Studies
+        </h2>
+        <p class="pL font-light sm_text_center">
           Explore Real-Life Examples of Our Proven Digital Marketing <br />
           Success through Our Case Studies
         </p>
       </div>
 
-      <!-- Case Study Details-->
       <div class="bg-black border-rounded p-50 mt-60">
+        <div class="flex justify-center">
+          <div class="sm-w-100 bg-black text-white">
+            <div class="vertical-line"></div>
+            <p class="text_box pXL">
+              For a local restaurant, we implemented a targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a <br />
+              25% increase in sales.
+            </p>
+            <a href="#" class="flex align-center mt-20 text-green">
+              <span class="text_box pM">Learn more</span>
+              <img src="./src/img/learnMore.svg" alt="Arrow" class="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study Details-->
+      <div class="bg-black border-rounded p-50 mt-60 only_desktop">
         <div class="flex justify-between">
           <div class="w-30 bg-black text-white">
             <div class="vertical-line"></div>
@@ -246,15 +437,21 @@
 
     <!-- Working proccess section -->
     <section class="mt-140 container">
-      <div class="flex gap-40 align-center">
-        <h2 class="hL text_box font-semibold green">Our Working Process</h2>
-        <p class="pL font-light">
+      <div class="flex gap-40 align-center sm_justify_center">
+        <h2 class="hL text_box font-semibold green sm_text_center">
+          Our Working <br class="only_mobile" />
+          Process
+        </h2>
+
+        <p class="pL font-light sm_text_center">
           Step-by-Step Guide to Achieving <br />
           Your Business Goals
         </p>
       </div>
 
-      <div class="green border-rounded border box-shadow p-41 mt-60">
+      <div
+        class="green border-rounded border box-shadow p-41 mt-60 only_desktop"
+      >
         <div class="flex justify-between flex-col">
           <div class="flex justify-between align-center">
             <div class="flex align-center gap-40">
@@ -280,71 +477,92 @@
         </div>
       </div>
 
-      <div class="bg-gray border-rounded border box-shadow p-41 mt-40">
-        <div class="flex align-center justify-between">
-          <div class="flex align-center gap-40">
-            <h1 class="hXL text_box font-bold">02</h1>
-            <h3 class="hM text_box font-semibold">
+      <div
+        class="bg-gray border-rounded border box-shadow p-41 sm-p-30 sm-p-20 mt-40 only_mobile"
+      >
+        <div class="flex align-center justify-between gap-20 no-flex-wrap">
+          <div class="flex align-center gap-40 sm-gap-30 no-flex-wrap ">
+            <h1 class="hXL sm-hL text_box font-bold">01</h1>
+            <h3 class="hM text_box font-semibold ">Consultation</h3>
+          </div>
+          <div class="circle">
+            <span>+</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray border-rounded border box-shadow p-41 sm-p-30 sm-p-20 mt-40 "
+      >
+        <div class="flex align-center justify-between gap-20 no-flex-wrap">
+          <div class="flex align-center gap-40 sm-gap-30 no-flex-wrap ">
+            <h1 class="hXL sm-hL text_box font-bold">02</h1>
+            <h3 class="hM text_box font-semibold ">
               Research and Strategy Development
             </h3>
           </div>
-
           <div class="circle">
             <span>+</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-gray border-rounded border box-shadow p-41 mt-40">
-        <div class="flex align-center justify-between">
-          <div class="flex align-center gap-40">
-            <h1 class="hXL text_box font-bold">03</h1>
-            <h3 class="hM text_box font-semibold">Implementation</h3>
+      <div
+        class="bg-gray border-rounded border box-shadow p-41 sm-p-30 sm-p-20 mt-40"
+      >
+        <div class="flex align-center justify-between gap-20 no-flex-wrap">
+          <div class="flex align-center gap-40 sm-gap-30 no-flex-wrap">
+            <h1 class="hXL sm-hL text_box font-bold">03</h1>
+            <h3 class="hM text_box font-semibold ">Implementation</h3>
           </div>
-
           <div class="circle">
             <span>+</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-gray border-rounded border box-shadow p-41 mt-40">
-        <div class="flex align-center justify-between">
-          <div class="flex align-center gap-40">
-            <h1 class="hXL text_box font-bold">04</h1>
-            <h3 class="hM text_box font-semibold">
+      <div
+        class="bg-gray border-rounded border box-shadow p-41 sm-p-30 sm-p-20 mt-40"
+      >
+        <div class="flex align-center justify-between gap-20 no-flex-wrap">
+          <div class="flex align-center gap-40 sm-gap-30 no-flex-wrap">
+            <h1 class="hXL sm-hL text_box font-bold">04</h1>
+            <h3 class="hM text_box font-semibold ">
               Monitoring and Optimization
             </h3>
           </div>
-
           <div class="circle">
             <span>+</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-gray border-rounded border box-shadow p-41 mt-40">
-        <div class="flex align-center justify-between">
-          <div class="flex align-center gap-40">
-            <h1 class="hXL text_box font-bold">05</h1>
-            <h3 class="hM text_box font-semibold">
+      <div
+        class="bg-gray border-rounded border box-shadow p-41 sm-p-30 sm-p-20 mt-40"
+      >
+        <div class="flex align-center justify-between gap-20 no-flex-wrap">
+          <div class="flex align-center gap-40 sm-gap-30 no-flex-wrap">
+            <h1 class="hXL sm-hL text_box font-bold">05</h1>
+            <h3 class="hM text_box font-semibold ">
               Reporting and Communication
             </h3>
           </div>
-
           <div class="circle">
             <span>+</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-gray border-rounded border box-shadow p-41 mt-40">
-        <div class="flex align-center justify-between">
-          <div class="flex align-center gap-40">
-            <h1 class="hXL text_box font-bold">06</h1>
-            <h3 class="hM text_box font-semibold">Continual Improvement</h3>
+      <div
+        class="bg-gray border-rounded border box-shadow p-41 sm-p-30 sm-p-20 mt-40"
+      >
+        <div class="flex align-center justify-between gap-20 no-flex-wrap">
+          <div class="flex align-center gap-40 sm-gap-30 no-flex-wrap">
+            <h1 class="hXL sm-hL text_box font-bold">06</h1>
+            <h3 class="hM text_box font-semibold ">
+              Continual Improvement
+            </h3>
           </div>
-
           <div class="circle">
             <span>+</span>
           </div>
@@ -354,16 +572,18 @@
 
     <!-- Team Section -->
     <section class="mt-140 container">
-      <div class="flex align-center gap-40">
-        <h2 class="hL text_box font-semibold green">Team</h2>
-        <p class="pL font-light">
+      <div class="flex align-center gap-40 sm_justify_center">
+        <h2 class="hL text_box font-semibold green sm_text_center">Team</h2>
+        <p class="pL font-light sm_text_center">
           Meet the skilled and experienced team behind our <br />
           successful digital marketing strategies
         </p>
       </div>
 
       <div class="flex gap-25 mt-40">
-        <div class="bg-gray border border-rounded box-shadow p-35 w_30">
+        <div
+          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100"
+        >
           <div class="flex justify-between align-start">
             <div class="flex align-end gap-15">
               <img src="./src/img/johnSmith.svg" class="w-40" alt="" />
@@ -383,13 +603,15 @@
           </p>
         </div>
 
-        <div class="bg-gray border border-rounded box-shadow p-35 w_30">
+        <div
+          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100"
+        >
           <div class="flex justify-between align-start">
             <div class="flex align-end gap-15">
               <img src="./src/img/janeDoe.svg" class="w-40" alt="" />
               <div class="flex flex-col">
-                <h4 class="no-wrap">Jane Doe</h4>
-                <p class="no-wrap">Director of Operations</p>
+                <h4>Jane Doe</h4>
+                <p>Director</p>
               </div>
             </div>
             <div>
@@ -403,13 +625,15 @@
           </p>
         </div>
 
-        <div class="bg-gray border border-rounded box-shadow p-35 w_30">
+        <div
+          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100"
+        >
           <div class="flex justify-between align-start">
             <div class="flex align-end gap-15">
               <img src="./src/img/michael.svg" class="w-40" alt="" />
               <div class="flex flex-col">
                 <h4 class="no-wrap">Michael Brown</h4>
-                <p class="no-wrap">Senior CEO Specialist</p>
+                <p class="no-wrap">CEO Specialist</p>
               </div>
             </div>
             <div>
@@ -425,7 +649,9 @@
       </div>
 
       <div class="flex gap-40 mt-20">
-        <div class="bg-gray border border-rounded box-shadow p-35 w_30">
+        <div
+          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100 only_desktop"
+        >
           <div class="flex justify-between align-start">
             <div class="flex align-end gap-15">
               <img src="./src/img/emily.svg" class="w-40" alt="" />
@@ -445,7 +671,9 @@
           </p>
         </div>
 
-        <div class="bg-gray border border-rounded box-shadow p-35 w_30">
+        <div
+          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100 only_desktop"
+        >
           <div class="flex justify-between align-start">
             <div class="flex align-end gap-15">
               <img src="./src/img/brian.svg" class="w-40" alt="" />
@@ -466,7 +694,9 @@
           </p>
         </div>
 
-        <div class="bg-gray border border-rounded box-shadow p-35 w_30">
+        <div
+          class="bg-gray border border-rounded box-shadow p-35 w_30 sm-w-100"
+        >
           <div class="flex justify-between align-start">
             <div class="flex align-end gap-15">
               <img src="./src/img/sarah.svg" class="w-40" alt="" />
@@ -487,15 +717,21 @@
         </div>
       </div>
       <div>
-        <button class="btn_primary mt-30 btn-right w-288">see all team</button>
+        <button
+          class="btn_primary mt-30 btn-right w-288 sm_justify_center sm-w-100"
+        >
+          see all team
+        </button>
       </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="mt-140 container">
-      <div class="flex align-center gap-40">
-        <h2 class="hL green font-semibold text_box">Testimonials</h2>
-        <p class="pL font-light">
+      <div class="flex align-center gap-40 sm_justify_center">
+        <h2 class="hL green font-semibold text_box sm_text_center">
+          Testimonials
+        </h2>
+        <p class="pL font-light sm_text_center">
           Hear from Our Satisfied Clients: Read Our Testimonials <br />
           to Learn More about Our Digital Marketing Services
         </p>
@@ -504,7 +740,9 @@
       <div class="flex gap-40 mt-40">
         <div class="bg-black border-rounded p-35 gap-40 overflow-hidden">
           <div class="flex justify-between gap-40">
-            <div class="border-green border-rounded p-35 ml-349 fit-height">
+            <div
+              class="border-green border-rounded p-35 ml-349 fit-height only_desktop"
+            >
               <p class="pL text-white">
                 "We have been working with Positivus for the past year and have
                 seen a significant increase in website traffic and leads as a
@@ -536,7 +774,9 @@
               </div>
             </div>
 
-            <div class="border-green border-rounded p-35 mr-349 fit-height">
+            <div
+              class="border-green border-rounded p-35 mr-349 fit-height only_desktop"
+            >
               <p class="pL text-white">
                 "We have been working with Positivus for the past year and have
                 seen a significant increase in website traffic and leads as a
@@ -548,10 +788,14 @@
             </div>
           </div>
 
-          <div class="flex justify-center gap-80 mt-140">
-            <img src="./src/img/Arrow left.svg" class="w-2" alt="" />
-            <img src="./src/img/Navigation stars.svg" class="w-10" alt="" />
-            <img src="./src/img/Arrow right.svg" class="w-2" alt="" />
+          <div class="flex justify-center gap-80 mt-140 sm-mt-60">
+            <img src="./src/img/Arrow left.svg" class="w-2 sm-w-5" alt="" />
+            <img
+              src="./src/img/Navigation stars.svg"
+              class="w-10 sm-w-30"
+              alt=""
+            />
+            <img src="./src/img/Arrow right.svg" class="w-2 sm-w-5" alt="" />
           </div>
         </div>
       </div>
@@ -560,19 +804,21 @@
 
     <!-- Contact section -->
     <section class="mt-140 container">
-      <div class="flex align-center gap-40">
-        <h2 class="hL green font-semibold text_box">Contact Us</h2>
-        <p class="pL font-light">
+      <div class="flex align-center gap-40 sm_justify_center">
+        <h2 class="hL green font-semibold text_box sm_text_center">
+          Contact Us
+        </h2>
+        <p class="pL font-light sm_text_center">
           Connect with Us: Let's Discuss Your <br />
           Digital Marketing Needs
         </p>
       </div>
 
       <div class="flex gap-40 mt-40">
-        <div class="bg-gray border border-rounded p-35">
-          <div class="flex justfy-between gap-80">
+        <div class="bg-gray border-rounded p-35 w-100 sm-w-100 sm-p-40">
+          <div class="flex justfy-between gap-80 sm-gap-30">
             <div class="flex justify-between flex-col gap-40">
-              <div class="flex gap-10">
+              <div class="flex sm-justify-evenly">
                 <input type="radio" />
                 <label for="text">Say Hi</label>
 
@@ -583,7 +829,7 @@
               <div class="flex flex-col gap-10">
                 <label name>Name*</label>
                 <input
-                  class="border rounded-14 w-500 h-60 p-18"
+                  class="border rounded-14 w-500 h-60 p-18 sm-w-330 sm-h-40"
                   type="text"
                   name="name"
                   placeholder="Name"
@@ -593,7 +839,7 @@
               <div class="flex flex-col gap-10">
                 <label name>Email*</label>
                 <input
-                  class="border rounded-14 w-500 h-60 p-18"
+                  class="border rounded-14 w-500 h-60 p-18 sm-w-330 sm-h-40"
                   type="email"
                   name="email"
                   placeholder="Email"
@@ -603,7 +849,7 @@
               <div class="flex flex-col gap-10">
                 <label name>Text*</label>
                 <textarea
-                  class="border rounded-14"
+                  class="border rounded-14 sm-w-330 p-18"
                   name="longText"
                   rows="10"
                   cols="50"
@@ -613,32 +859,42 @@
               <div>
                 <input
                   type="submit"
-                  class="border w-500 btn_primary"
+                  class="border w-500 btn_primary only_desktop"
                   name="submit"
                   value="Send Message"
                 />
               </div>
             </div>
 
-            <div class="flex justify-end align-center">
+            <div class="flex justify-end align-center only_desktop_flex">
               <img src="./src/img/Illustration.svg" alt="" />
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <input
+          type="submit"
+          class="border sm-w-100 mt-40 btn_primary"
+          name="submit"
+          value="Send Message"
+        />
       </div>
     </section>
 
     <!-- footer section -->
     <section class="mt-140 container">
       <div class="flex gap-40 mt-40">
-        <div class="bg-black border border-rounded p-35">
+        <div class="bg-black border border-rounded p-35 w-100 sm-w-100">
           <div class="flex justify-between flex-col gap-80">
-            <div class="flex justify-between gap-140 align-center">
+            <div
+              class="flex justify-between gap-140 sm-gap-60 align-center sm_justify_center"
+            >
               <div>
                 <img src="./src/img/whitelogo.svg" alt="logo" />
               </div>
-              <div class="flex align-center gap-40">
-                <ul class="flex gap-40">
+              <div class="flex align-center gap-40 s">
+                <ul class="flex gap-40 sm-flex-col sm-gap-15">
                   <li>
                     <a class="pL text-white underline" href="#">About us</a>
                   </li>
@@ -655,29 +911,39 @@
                 </ul>
               </div>
 
-              <div class="flex align-center gap-20">
+              <div class="flex align-center gap-20 only_desktop">
                 <img src="/src/img/Social icons.svg" alt="" />
               </div>
             </div>
 
             <!-- main -->
-            <div class="flex justify-between gap-80">
-              <div class="flex justify-between flex-col flex-start gap-15">
-                <h4 class="bg-green text_box hS">Contact us:</h4>
-                <p class="pM text-white font-light">
+            <div
+              class="flex justify-between gap-80 sm_justify_center sm-gap-30"
+            >
+              <div
+                class="flex justify-between flex-col flex-start gap-15 sm_justify_center"
+              >
+                <h4 class="bg-green text_box sm-text-box hS sm_text_center">
+                  Contact us:
+                </h4>
+                <p class="pM text-white font-light sm_text_center">
                   Email: info@positivus.com
                 </p>
-                <p class="pM text-white font-light">Phone: 555-567-8901</p>
-                <p class="pM text-white font-light">
+                <p class="pM text-white font-light sm_text_center">
+                  Phone: 555-567-8901
+                </p>
+                <p class="pM text-white font-light sm_text_center">
                   Address: 1234 Main St <br />
                   Moonstone City, Stardust State 12345
                 </p>
               </div>
 
-              <div class="bg-deep-gray border-rounded p-35 align-center">
+              <div
+                class="bg-deep-gray border-rounded p-35 align-center sm-w-100"
+              >
                 <div class="flex justify-between align-center gap-40">
                   <input
-                    class="border-white rounded-14 bg-deep-gray h-40 p-18"
+                    class="border-white rounded-14 bg-deep-gray h-40 p-18 sm-w-100"
                     type="email"
                     name="email"
                     placeholder="Email"
@@ -687,19 +953,25 @@
                     class="border-wh rounded-14 bg-green h-60 w-200 p-18"
                     type="submit"
                   >
-                    <h3 class="font-semibold">Subscribe to News</h3>
+                    <h3 class="font-semibold sm-hM">Subscribe to News</h3>
                   </button>
                 </div>
+              </div>
+
+              <div class="flex only_mobile_flex">
+                <img src="/src/img/Social icons.svg" alt="" />
               </div>
             </div>
 
             <hr class="custom_hr" />
 
-            <footer class="flex gap-40">
-              <p class="pL font-light text-white">
+            <footer class="flex gap-40 sm_justify_center">
+              <p class="pL font-light text-white sm_text_center">
                 © 2023 Positivus. All Rights Reserved.
               </p>
-              <p class="pL underline text-white">Privacy Policy</p>
+              <p class="pL underline text-white sm_text_center">
+                Privacy Policy
+              </p>
             </footer>
           </div>
         </div>
